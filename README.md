@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# React Holy Grail
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective
 
-## Available Scripts
+Get introduced to React by creating a one-page application.
 
-In the project directory, you can run:
+## Learning
 
-### `npm start`
+In this lab, you will recreate the classic [Holy Grail layout](https://en.wikipedia.org/wiki/Holy_grail_(web_design)) in React.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Topics:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React components
+- React JSX
 
-### `npm test`
+## Achieving
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Your work will result in:
 
-### `npm run build`
+- A page that resembles the Holy Grail layout.
+- This page will be comprised of three components: the header, the content, and the footer. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Procedure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Create your components
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [ ] Create three new components: Header.jsx, Content.jsx, and Footer.jsx
+- [ ] In these three new components, set up their boilerplate code. Replace `ComponentName` with the appropriate name and insert text into the return statement so you know which component is being rendered.
+```js
+function ComponentName() {
+  return (
+    <div>
+      This is the ComponentName component.
+    </div>
+  );
+}
+export default ComponentName;
+```
 
-### `npm run eject`
+### Import your new components into `App.jsx`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [ ] Within the `App` component, import `Header`, `Content`, and `Footer`.
+```js
+import ComponentName from './ComponentName.jsx'
+```
+- [ ] Render your three imported components in the App component's return statement.
+```js
+ return (
+    <main>
+      <ComponentName />
+    </main>
+  );
+```
+**Remember, React renders components in top-down order.** 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Style your components
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [ ] Refer to the Base wireframe at the following link: [React Holy Grail](https://www.figma.com/file/3LzHE1feUIla6ZfNUKyMhZ/react-holy-grail?node-id=0%3A1)
+- [ ] JSX allows for HTML elements to be written in JavaScript. Apply CSS to them in the same way you have previously.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Review
 
-## Learn More
+In this lab, you will have created your first React application with multiple components.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The software should:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Have four total JSX files: App, Header, Content, and Footer.
+- Have three of those components (Header, Content, and Footer) rendered on App.
+- Match the given wireframe.
+  
+## Going Further
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Refer to the Going Further wireframe at the following link: [React Holy Grail](https://www.figma.com/file/3LzHE1feUIla6ZfNUKyMhZ/react-holy-grail?node-id=0%3A1)
+- Create one or two more components to serve as ADs on the website. Incorporate timers to have the ad image change periodically.
