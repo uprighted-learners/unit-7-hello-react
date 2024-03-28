@@ -22,6 +22,10 @@ Your work will result in:
 
 ## Procedure
 
+## Starting up the React App
+- [ ] Once cloned, install the projects dependencies using `npm install` or `npm i`
+- [ ] Use `npm start` and visit the app on your browser at `localhost:3000`
+
 ### Create your components
 
 - [ ] Create three new components: Header.jsx, Content.jsx, and Footer.jsx
