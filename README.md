@@ -6,7 +6,7 @@ Get introduced to React by creating a one-page application.
 
 ## Learning
 
-In this lab, you will recreate the classic [Holy Grail layout](https://en.wikipedia.org/wiki/Holy_grail_(web_design)) in React.
+In this exercise, you will recreate the classic [Holy Grail layout](https://en.wikipedia.org/wiki/Holy_grail_(web_design)) in React.
 
 Topics:
 
@@ -64,7 +64,7 @@ import ComponentName from './ComponentName.jsx'
 
 ## Review
 
-In this lab, you will have created your first React application with multiple components.
+In this exercise, you will have created your first React application with multiple components.
 
 The software should:
 
